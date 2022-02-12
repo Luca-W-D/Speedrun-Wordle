@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedrun Wordle</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="words.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="site-container">
+        <div class="HUD">
+            <h2 style="font-weight: 400; font-size: 1.25em;">This was written in an hour... please lower any
+                expectations</h2>
+        </div>
+        <div class="wordle-grid">
+            <div class="row">
+                <!-- See: https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-3d">
+                    <div class="cell-3d-inner">
+                        <div class="cell-3d-front">
+                            <span class="letter"></span>
+                        </div>
+                        <div class="cell-3d-back">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
